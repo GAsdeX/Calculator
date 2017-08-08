@@ -1,0 +1,122 @@
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li,
+ol,
+span {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: 14px;
+}
+ > * {
+  outline: 0;
+}
+.wrapper {
+  max-width: 1200px;
+  display: block;
+  margin: 0 auto;
+}
+.wrapper > .row {
+  width: 100%;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+.wrapper > .row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.wrapper > .row > .col-3 {
+  width: 33.33333%;
+  display: block;
+  float: left;
+}
+.wrapper > .row > .col-3:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.wrapper > .row > .col-2 {
+  width: 50%;
+  display: block;
+  float: left;
+}
+.wrapper > .row > .col-2:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.wrapper > .row > .col-1 {
+  width: 100%;
+  display: block;
+  float: left;
+}
+.wrapper > .row > .col-1:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.site-content {
+  margin-top: 30px;
+}
+.site-content .field-item {
+  width: 100%;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+.site-content .field-item .textarea-title {
+  display: block;
+  text-align: center;
+  padding: 20px;
+}
+.site-content .field-item textarea {
+  width: 100%;
+  resize: none;
+  outline: none;
+  overflow-y: scroll;
+  box-sizing: border-box;
+}
+.site-content .field-item .input-group {
+  display: table;
+  width: 100%;
+}
+.site-content .field-item .input-group .input-group-row {
+  display: table-row;
+  padding: 5px;
+}
+.site-content .field-item .input-group .input-group-row > * {
+  display: table-cell;
+  padding: 6px 12px;
+}
+.site-content .field-item .input-group .input-group-row .input-field {
+  width: 100%;
+}
+.site-content .existing-alorythm,
+.site-content .value {
+  padding: 0 15px;
+  display: block;
+  width: 100%;
+  margin-top: 30px;
+}
+.site-content .existing-alorythm .title,
+.site-content .value .title {
+  padding-bottom: 20px;
+}
+.site-content .existing-alorythm p,
+.site-content .value p {
+  display: inline-block;
+  padding: 7px 15px;
+  box-sizing: border-box;
+  border: 1px solid #eee;
+}

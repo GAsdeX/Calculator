@@ -1,0 +1,132 @@
+// out: ../css/style.css
+
+html, body, h1, h2, h3, h4, h5, h6, p, ul, li, ol, span {
+	border: 0;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	text-decoration: none;
+	font-family: sans-serif;
+	font-size: 14px;
+}
+
+& > * {
+	outline: 0;
+}
+
+.wrapper {
+	max-width: 1200px;
+	display: block;
+	margin: 0 auto;
+
+	& > .row {
+		width: 100%;
+		padding: 0 15px;
+		box-sizing: border-box;
+		&:after {
+			content: "";
+			display: table;
+			clear: both;
+		}
+
+		& > .col-3 {
+			width: 33.33333%;
+			display: block;
+			float: left;
+			&:after {
+				content: "";
+				display: table;
+				clear: both;
+			}
+		}
+		& > .col-2 {
+			width: 50%;
+			display: block;
+			float: left;
+			&:after {
+				content: "";
+				display: table;
+				clear: both;
+			}
+		}
+		& > .col-1 {
+			width: 100%;
+			display: block;
+			float: left;
+			&:after {
+				content: "";
+				display: table;
+				clear: both;
+			}
+		}
+	}
+}
+
+.site-content {
+	margin-top: 30px;
+	.title {
+
+	}
+	.field-item {
+		width: 100%;
+		padding: 0 15px;
+		box-sizing: border-box;
+
+		.textarea-title {
+			display: block;
+			text-align: center;
+			padding: 20px;
+		}
+
+		textarea {
+			width: 100%;
+			resize: none;
+			outline: none;
+			overflow-y: scroll;
+		    box-sizing: border-box;
+		}
+
+		.input-group {
+			display: table;
+			width: 100%;
+
+			.input-group-row {
+				display: table-row;
+				padding: 5px;
+
+				& > * {
+					display: table-cell;
+					padding: 6px 12px;
+				}
+				.input-naming {
+
+
+				}
+				.input-field {
+					width: 100%;
+				}
+			}
+		}
+	}
+
+	.existing-alorythm, .value {
+		padding: 0 15px;
+		display: block;
+		width: 100%;
+		margin-top: 30px;
+
+		.title {
+			padding-bottom: 20px;
+		}
+
+		select {
+
+		}
+		p {
+			display: inline-block;
+			padding: 7px 15px;
+			box-sizing: border-box;
+			border: 1px solid #eee;
+		}
+	}
+}
